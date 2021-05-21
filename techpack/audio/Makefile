@@ -23,6 +23,9 @@ ifeq ($(CONFIG_ARCH_LITO), y)
 include $(srctree)/techpack/audio/config/litoauto.conf
 export $(shell sed 's/=.*//' $(srctree)/techpack/audio/config/litoauto.conf)
 endif
+ifeq ($(CONFIG_ARCH_LITO), y)
+include $(srctree)/techpack/audio/config/litoauto.conf
+endif
 
 # Use USERINCLUDE when you must reference the UAPI directories only.
 USERINCLUDE     += \
