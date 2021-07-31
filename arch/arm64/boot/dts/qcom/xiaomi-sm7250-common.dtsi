@@ -312,11 +312,6 @@
 };
 
 &reserved_memory {
-	disp_rdump_memory: disp_rdump_region@ac000000 {
-		reg = <0x0 0xac000000 0x0 0x01000000>;
-		no-map;
-		label = "disp_rdump_region";
-	};
 };
 
 &qupv3_se0_i2c {
