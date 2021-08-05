@@ -1,0 +1,13 @@
+diff a/security/selinux/hooks.c b/security/selinux/hooks.c	(rejected hunks)
+@@ -100,6 +100,11 @@
+ #include "audit.h"
+ #include "avc_ss.h"
+ 
++#ifdef CONFIG_VBSWAP_HELPER
++#include "security.h"
++#include "avc_ss_reset.h"
++#endif /* CONFIG_VBSWAP_HELPER */
++
+ struct selinux_state selinux_state;
+ 
+ /* SECMARK reference count */

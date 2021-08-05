@@ -1,0 +1,16 @@
+0.01-0.13 Try to bringup Techpach/Audio & WLAN
+0.15 Audio & WLAN Bringup (Aduio_Not_Full_Fuctional)
+0.16 Attempt to fix Aduio & Try to enable ZRAM_WRITEBACK
+0.17 Correct the complie failure of 0.16
+0.19 Change Clang Complier to Qualcomm Clang
+0.15.1 Minor Change (Change complie settings)
+0.19.1 Enable LTO
+0.19.2 Enable SIMPLE_LMK
+0.20 mm: Stop kswapd early when nothing's waiting for it to free pages
+0.20.1 Remove Simple_lmk for some reason
+0.20.2 1.cpufreq: schedutil: Avoid reducing frequency of busy CPUs prematurely
+       2.mm: Stop kswapd early when nothing's waiting for it to free pages
+       3.Userspace reads /proc/config.gz and spits out an error message after boot
+         finishes when it doesn't like the kernel's configuration.
+0.20.2 1.fix config.gz
+       2.Minor changes for battery life and performence

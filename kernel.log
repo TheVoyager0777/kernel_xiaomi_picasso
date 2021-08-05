@@ -1,0 +1,25 @@
+make[1]: 进入目录“/home/han/桌面/QualcommAndroid/Xiaomi_Kernel_OpenSource-picasso-r-oss/out”
+arch/arm64/Makefile:27: ld does not support --fix-cortex-a53-843419; kernel may be susceptible to erratum
+arch/arm64/Makefile:48: Detected assembler with broken .inst; disassembly will be unreliable
+  Using .. as source for kernel
+  GEN     ./Makefile
+  CC      arch/arm64/kernel/asm-offsets.s
+In file included from ../arch/arm64/kernel/asm-offsets.c:21:
+In file included from ../include/linux/arm_sdei.h:14:
+In file included from ../arch/arm64/include/asm/sdei.h:15:
+In file included from ../include/linux/preempt.h:81:
+In file included from ./arch/arm64/include/generated/asm/preempt.h:1:
+In file included from ../include/asm-generic/preempt.h:5:
+In file included from ../include/linux/thread_info.h:38:
+In file included from ../arch/arm64/include/asm/thread_info.h:31:
+../arch/arm64/include/asm/stack_pointer.h:8:51: error: register 'sp' unsuitable for global register variables on this target
+register unsigned long current_stack_pointer asm ("sp");
+                                                  ^
+In file included from ../arch/arm64/kernel/asm-offsets.c:25:
+In file included from ../include/linux/kvm_host.h:14:
+../include/linux/signal.h:83:11: warning: array index 3 is past the end of the array (which contains 1 element) [-Warray-bounds]
+error, forbidden warning: signal.h:83
+make[2]: *** [.././Kbuild:56：arch/arm64/kernel/asm-offsets.s] 错误 1
+make[1]: *** [/home/han/桌面/QualcommAndroid/Xiaomi_Kernel_OpenSource-picasso-r-oss/Makefile:1223：prepare0] 错误 2
+make[1]: 离开目录“/home/han/桌面/QualcommAndroid/Xiaomi_Kernel_OpenSource-picasso-r-oss/out”
+make: *** [Makefile:146：sub-make] 错误 2
